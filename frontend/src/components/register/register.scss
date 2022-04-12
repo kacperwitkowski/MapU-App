@@ -1,0 +1,101 @@
+@import "../mixins.scss";
+
+.register {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 2000;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .register__close {
+    @include closePage;
+    top: -10px;
+    right: 10px;
+    font-size: 60px;
+  }
+
+  &__content {
+    @include flex;
+    flex-direction: column;
+    width: 40%;
+    height: 55%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &--formSumbit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--formSumbit input {
+      margin: 15px;
+    }
+
+    &--formSumbit label {
+      margin: 15px;
+    }
+
+    & input {
+      border: none;
+      border-bottom: 1px solid gray;
+      font-size: 24px;
+    }
+
+    & input::placeholder {
+      font-size: 16px;
+      color: rgb(185, 184, 184);
+    }
+
+    & input:focus {
+      outline: none;
+    }
+
+    &--logo {
+      @include flex;
+    }
+
+    &--logo img {
+      width: 150px;
+    }
+
+    &--button {
+      border: none;
+      padding: 15px;
+      border-radius: 15px;
+      color: white;
+      background-color: steelblue;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .register__content {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+  .register__content--logo img {
+    width: 110px;
+    height: 80px;
+  }
+
+  .register__content--formSumbit input,
+  .register__content--formSumbit label {
+    margin: 5px;
+  }
+}

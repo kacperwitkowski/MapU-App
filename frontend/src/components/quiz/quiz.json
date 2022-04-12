@@ -1,0 +1,828 @@
+ [{
+     "question": "What is the largest country in the world?",
+     "answers": [{
+         "answerText": "India",
+         "isCorrect": false
+       },
+       {
+         "answerText": "Russia",
+         "isCorrect": true
+       },
+       {
+         "answerText": "Canada",
+         "isCorrect": false
+       },
+       {
+         "answerText": "USA",
+         "isCorrect": false
+       }
+     ]
+   },
+   {
+     "question": "Which country has the largest population in the world?",
+     "answers": [{
+       "answerText": "China",
+       "isCorrect": true
+     }, {
+       "answerText": "India",
+       "isCorrect": false
+     }, {
+       "answerText": "Australia",
+       "isCorrect": false
+     }, {
+       "answerText": "Kazahstan",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "What is the capital of Mexico?",
+     "answers": [{
+       "answerText": "Guadalajara",
+       "isCorrect": false
+     }, {
+       "answerText": "Mexico City",
+       "isCorrect": true
+     }, {
+       "answerText": "Bogota",
+       "isCorrect": false
+     }, {
+       "answerText": "Acapulco",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "What is the capital of Senegal?",
+     "answers": [{
+       "answerText": "Durban",
+       "isCorrect": false
+     }, {
+       "answerText": "Akra",
+       "isCorrect": false
+     }, {
+       "answerText": "Dakar",
+       "isCorrect": true
+     }, {
+       "answerText": "Nairobi",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "Which of the following attractions is in a different country than the others?",
+     "answers": [{
+       "answerText": "Christ the Redeemer",
+       "isCorrect": false
+     }, {
+       "answerText": "Galapagos beach",
+       "isCorrect": true
+     }, {
+       "answerText": "Copacabana",
+       "isCorrect": false
+     }, {
+       "answerText": "Iguaçu Falls",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "How many countries are there in Africa?",
+     "answers": [{
+       "answerText": "56",
+       "isCorrect": false
+     }, {
+       "answerText": "60",
+       "isCorrect": false
+     }, {
+       "answerText": "48",
+       "isCorrect": false
+     }, {
+       "answerText": "54",
+       "isCorrect": true
+     }]
+   },
+   {
+     "question": "What is the smallest country in the world (0.49km²)?",
+     "answers": [{
+       "answerText": "Vatican",
+       "isCorrect": true
+     }, {
+       "answerText": "Monaco",
+       "isCorrect": false
+     }, {
+       "answerText": "Andorra",
+       "isCorrect": false
+     }, {
+       "answerText": "Liechtenstein",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "Which of the following countries is not in Central America?",
+     "answers": [{
+       "answerText": "Honduras",
+       "isCorrect": false
+     }, {
+       "answerText": "Cuba",
+       "isCorrect": false
+     }, {
+       "answerText": "Uruguay",
+       "isCorrect": true
+     }, {
+       "answerText": "Guatemala",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "In which country can you visit Machu Picchu?",
+     "answers": [{
+       "answerText": "Chile",
+       "isCorrect": false
+     }, {
+       "answerText": "Paraguay",
+       "isCorrect": false
+     }, {
+       "answerText": "Bolivia",
+       "isCorrect": false
+     }, {
+       "answerText": "Peru",
+       "isCorrect": true
+     }]
+   },
+   {
+     "question": "Which country has the most islands in the world?",
+     "answers": [{
+       "answerText": "Sweden",
+       "isCorrect": true
+     }, {
+       "answerText": "Norway",
+       "isCorrect": false
+     }, {
+       "answerText": "Canada",
+       "isCorrect": false
+     }, {
+       "answerText": "Japan",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": " In which of the following country do people drive their vehicles on the left of the road?",
+     "index": 12,
+     "answers": [{
+       "answerText": "Australia",
+       "isCorrect": true
+     }, {
+       "answerText": "Poland",
+       "isCorrect": false
+     }, {
+       "answerText": "China",
+       "isCorrect": false
+     }, {
+       "answerText": "USA",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "How many people live in Spain?",
+     "index": 13,
+     "answers": [{
+       "answerText": "51.269.734",
+       "isCorrect": false
+     }, {
+       "answerText": "54.409.800",
+       "isCorrect": false
+     }, {
+       "answerText": "40.222.493",
+       "isCorrect": false
+     }, {
+       "answerText": "46,754,778",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "How many people live in Norway?",
+     "index": 14,
+     "answers": [{
+       "answerText": "9,006,398",
+       "isCorrect": false
+     }, {
+       "answerText": "5,421,241",
+       "isCorrect": true
+     }, {
+       "answerText": "4,033,963",
+       "isCorrect": false
+     }, {
+       "answerText": "3,546,421",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "In which country can you visit Geneva Lake?",
+     "index": 15,
+     "answers": [{
+       "answerText": "Poland",
+       "isCorrect": false
+     }, {
+       "answerText": "Germany",
+       "isCorrect": false
+     }, {
+       "answerText": "Austria",
+       "isCorrect": false
+     }, {
+       "answerText": "Switzerland",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "What country does the island of Zanzibar belong to?",
+     "index": 16,
+     "answers": [{
+       "answerText": "Cameroon",
+       "isCorrect": false
+     }, {
+       "answerText": "Tanzania",
+       "isCorrect": true
+     }, {
+       "answerText": "South Africa",
+       "isCorrect": false
+     }, {
+       "answerText": "Australia",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "In which country can you visit Angkor Wat?",
+     "index": 17,
+     "answers": [{
+       "answerText": "Myanmar",
+       "isCorrect": false
+     }, {
+       "answerText": "Thailand",
+       "isCorrect": false
+     }, {
+       "answerText": "Cambodia",
+       "isCorrect": true
+     }, {
+       "answerText": "Malaysia",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "To which continent does Fiji belong?",
+     "index": 18,
+     "answers": [{
+       "answerText": "Oceania",
+       "isCorrect": true
+     }, {
+       "answerText": "South America",
+       "isCorrect": false
+     }, {
+       "answerText": "Africa",
+       "isCorrect": false
+     }, {
+       "answerText": "North America",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "To which continent does Mauritius belong?",
+     "index": 19,
+     "answers": [{
+       "answerText": "Oceania",
+       "isCorrect": false
+     }, {
+       "answerText": "Africa",
+       "isCorrect": true
+     }, {
+       "answerText": "Asia",
+       "isCorrect": false
+     }, {
+       "answerText": "North America",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "To which continent does Haiti belong?",
+     "index": 20,
+     "answers": [{
+       "answerText": "Europe",
+       "isCorrect": false
+     }, {
+       "answerText": "South America",
+       "isCorrect": false
+     }, {
+       "answerText": "Africa",
+       "isCorrect": false
+     }, {
+       "answerText": "North America",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "In which part of Africa is Morocco located?",
+     "index": 21,
+     "answers": [{
+       "answerText": "Northeast",
+       "isCorrect": false
+     }, {
+       "answerText": "Northwest",
+       "isCorrect": true
+     }, {
+       "answerText": "Southeast",
+       "isCorrect": false
+     }, {
+       "answerText": "Southwest",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "In which part of South America is Argentina located?",
+     "index": 22,
+     "answers": [{
+       "answerText": "Northeast",
+       "isCorrect": false
+     }, {
+       "answerText": "Northwest",
+       "isCorrect": false
+     }, {
+       "answerText": "Southeast",
+       "isCorrect": true
+     }, {
+       "answerText": "Southwest",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "What is the capital of Venezuela?",
+     "index": 23,
+     "answers": [{
+       "answerText": "Asuncion",
+       "isCorrect": false
+     }, {
+       "answerText": "Caracas",
+       "isCorrect": true
+     }, {
+       "answerText": "La Paz",
+       "isCorrect": false
+     }, {
+       "answerText": "Lima",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "What are the colors in the Japan flag?",
+     "index": 24,
+     "answers": [{
+       "answerText": "Gold and white",
+       "isCorrect": false
+     }, {
+       "answerText": "Blue and red",
+       "isCorrect": false
+     }, {
+       "answerText": "White and Blue",
+       "isCorrect": false
+     }, {
+       "answerText": "White and red",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "What are the colors in the Albania flag?",
+     "index": 25,
+     "answers": [{
+       "answerText": "Red and black",
+       "isCorrect": true
+     }, {
+       "answerText": "Red and white",
+       "isCorrect": false
+     }, {
+       "answerText": "Blue and white",
+       "isCorrect": false
+     }, {
+       "answerText": "Blue and yellow",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "In which country can you visit Tbilisi Old Town?",
+     "index": 26,
+     "answers": [{
+       "answerText": "Georgia",
+       "isCorrect": true
+     }, {
+       "answerText": "Tunisia",
+       "isCorrect": false
+     }, {
+       "answerText": "Israel",
+       "isCorrect": false
+     }, {
+       "answerText": "Iran",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Which of these countries has a red crescent moon on the flag?",
+     "index": 27,
+     "answers": [{
+       "answerText": "Namibia",
+       "isCorrect": false
+     }, {
+       "answerText": "Mali",
+       "isCorrect": false
+     }, {
+       "answerText": "Ghana",
+       "isCorrect": false
+     }, {
+       "answerText": "Algeria",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "Which of these colors is dominating on the Kazakhstan flag?",
+     "index": 28,
+     "answers": [{
+       "answerText": "Navy",
+       "isCorrect": false
+     }, {
+       "answerText": "Turquoise",
+       "isCorrect": true
+     }, {
+       "answerText": "Red",
+       "isCorrect": false
+     }, {
+       "answerText": "Gold",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Which of these countries doesn't have access to Baltic Sea?",
+     "index": 29,
+     "answers": [{
+       "answerText": "Latvia",
+       "isCorrect": false
+     }, {
+       "answerText": "Denmark",
+       "isCorrect": false
+     }, {
+       "answerText": "Czech Republic",
+       "isCorrect": true
+     }, {
+       "answerText": "Poland",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "After Alaska, which U.S. state has the longest coastline?",
+     "index": 30,
+     "answers": [{
+       "answerText": "Florida",
+       "isCorrect": true
+     }, {
+       "answerText": "California",
+       "isCorrect": false
+     }, {
+       "answerText": "South Carolina",
+       "isCorrect": false
+     }, {
+       "answerText": "Oregon",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "What is the capital city of Australia?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Sydney",
+       "isCorrect": false
+     }, {
+       "answerText": "Canberra",
+       "isCorrect": true
+     }, {
+       "answerText": "Auckland",
+       "isCorrect": false
+     }, {
+       "answerText": "Melbourne",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "What is the only country that borders the United Kingdom?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Scotland",
+       "isCorrect": false
+     }, {
+       "answerText": "Northern Ireland",
+       "isCorrect": false
+     }, {
+       "answerText": "Iceland",
+       "isCorrect": false
+     }, {
+       "answerText": "Ireland",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "The Seychelles are located in which Ocean?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Atlantic",
+       "isCorrect": false
+     }, {
+       "answerText": "Indian",
+       "isCorrect": true
+     }, {
+       "answerText": "Arctic",
+       "isCorrect": false
+     }, {
+       "answerText": "Pacific",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Which U.S. state has the most active volcanoes?",
+     "index": 1,
+     "answers": [{
+       "answerText": "California",
+       "isCorrect": false
+     }, {
+       "answerText": "Washington",
+       "isCorrect": false
+     }, {
+       "answerText": "Alaska",
+       "isCorrect": true
+     }, {
+       "answerText": "Hawaii",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "What is the largest country in South America?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Colombia",
+       "isCorrect": false
+     }, {
+       "answerText": "Peru",
+       "isCorrect": false
+     }, {
+       "answerText": "Argentina",
+       "isCorrect": false
+     }, {
+       "answerText": "Brazil",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "What European country is home to Transylvania?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Croatia",
+       "isCorrect": false
+     }, {
+       "answerText": "Slovenia",
+       "isCorrect": false
+     }, {
+       "answerText": "Romania",
+       "isCorrect": true
+     }, {
+       "answerText": "Bulgaria",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Pretoria is the capital of what African country?",
+     "index": 1,
+     "answers": [{
+       "answerText": "South Africa",
+       "isCorrect": true
+     }, {
+       "answerText": "Somalia",
+       "isCorrect": false
+     }, {
+       "answerText": "Botswana",
+       "isCorrect": false
+     }, {
+       "answerText": "Kenya",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "The highest mountain of the world is in which two countries?",
+     "index": 1,
+     "answers": [{
+       "answerText": "China and Tibet",
+       "isCorrect": false
+     }, {
+       "answerText": "Pakistan and Nepal",
+       "isCorrect": false
+     }, {
+       "answerText": "India and Pakistan",
+       "isCorrect": false
+     }, {
+       "answerText": "Tibet and Nepal",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "Which continent is smallest in terms of land?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Europe",
+       "isCorrect": false
+     }, {
+       "answerText": "Australia",
+       "isCorrect": true
+     }, {
+       "answerText": "Africa",
+       "isCorrect": false
+     }, {
+       "answerText": "Asia",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Which of these countries is in South America?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Jamaica",
+       "isCorrect": false
+     }, {
+       "answerText": "Dominican Republic",
+       "isCorrect": false
+     }, {
+       "answerText": "Ecuador",
+       "isCorrect": true
+     }, {
+       "answerText": "Cuba",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Which of these capitals is the most northerly?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Reykjavik",
+       "isCorrect": true
+     }, {
+       "answerText": "Helsinki",
+       "isCorrect": false
+     }, {
+       "answerText": "Oslo",
+       "isCorrect": false
+     }, {
+       "answerText": "Ottawa",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "Which of these cities is not located in South America?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Flamengo",
+       "isCorrect": false
+     }, {
+       "answerText": "La Paz",
+       "isCorrect": false
+     }, {
+       "answerText": "Buenos Aires",
+       "isCorrect": false
+     }, {
+       "answerText": "Kuala Lumpur",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "On which continent is Cape of Good Hope located?",
+     "index": 1,
+     "answers": [{
+       "answerText": "South America",
+       "isCorrect": false
+     }, {
+       "answerText": "Europe",
+       "isCorrect": false
+     }, {
+       "answerText": "Asia",
+       "isCorrect": false
+     }, {
+       "answerText": "Africa",
+       "isCorrect": true
+     }]
+   }, {
+     "question": "In which country can you visit the famous Lochness?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Romania",
+       "isCorrect": false
+     }, {
+       "answerText": "Scotland",
+       "isCorrect": true
+     }, {
+       "answerText": "Bulgaria",
+       "isCorrect": false
+     }, {
+       "answerText": "Wales",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "To which country Easter Island belong to?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Bolivia",
+       "isCorrect": false
+     }, {
+       "answerText": "Suriname",
+       "isCorrect": false
+     }, {
+       "answerText": "Chile",
+       "isCorrect": true
+     }, {
+       "answerText": "Guyana",
+       "isCorrect": false
+     }]
+   }, {
+     "question": "In what state of America is New Orlean located in?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Washington",
+       "isCorrect": false
+     }, {
+       "answerText": "Texas",
+       "isCorrect": false
+     }, {
+       "answerText": "Louisiana",
+       "isCorrect": true
+     }, {
+       "answerText": "Kentucky",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "City of Dubrovnik known from popular TV show called Game of Throne is in which country?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Croatia",
+       "isCorrect": true
+     }, {
+       "answerText": "Greece",
+       "isCorrect": false
+     }, {
+       "answerText": "Slovenia",
+       "isCorrect": false
+     }, {
+       "answerText": "Bosnia and Herzegovina",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "What type of animal is in Sri Lanka flag?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Two headed eagle",
+       "isCorrect": false
+     }, {
+       "answerText": "Condor",
+       "isCorrect": false
+     }, {
+       "answerText": "Lion",
+       "isCorrect": true
+     }, {
+       "answerText": "Cow",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "What type of animal is in Egypt flag?",
+     "index": 1,
+     "answers": [{
+       "answerText": "White Dove",
+       "isCorrect": false
+     }, {
+       "answerText": "Eagle with Snake",
+       "isCorrect": false
+     }, {
+       "answerText": "Red Dragon",
+       "isCorrect": false
+     }, {
+       "answerText": "Golden eagle",
+       "isCorrect": true
+     }]
+   },
+   {
+     "question": "Formally to which country Greenland belongs to?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Denmark",
+       "isCorrect": true
+     }, {
+       "answerText": "Canada",
+       "isCorrect": false
+     }, {
+       "answerText": "Iceland",
+       "isCorrect": false
+     }, {
+       "answerText": "Russia",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "To what country are the Falkland Islands closest to?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Japan",
+       "isCorrect": false
+     }, {
+       "answerText": "Argentina",
+       "isCorrect": true
+     }, {
+       "answerText": "New Zealand",
+       "isCorrect": false
+     }, {
+       "answerText": "India",
+       "isCorrect": false
+     }]
+   },
+   {
+     "question": "Which of the following cities is in a different country than the others?",
+     "index": 1,
+     "answers": [{
+       "answerText": "Auckland",
+       "isCorrect": false
+     }, {
+       "answerText": "Wellington",
+       "isCorrect": false
+     }, {
+       "answerText": "Christchurch",
+       "isCorrect": false
+     }, {
+       "answerText": "Perth",
+       "isCorrect": true
+     }]
+   }
+ ]

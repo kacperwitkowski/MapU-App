@@ -1,0 +1,15 @@
+@mixin closePage {
+ background: none;
+ border: none;
+ position: absolute;
+ font-weight: bold;
+ top: 3px;
+ color: black;
+ padding: 0px;
+}
+
+@mixin flex {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

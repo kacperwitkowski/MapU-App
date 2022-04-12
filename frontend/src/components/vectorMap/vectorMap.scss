@@ -1,0 +1,40 @@
+.vectorMap {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  height: 690px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    & button {
+      border-radius: 20px;
+      font-size: 20px;
+      color: white;
+      background: #d5ab9c;
+      width: 100px;
+    }
+
+    & h4 {
+      margin: 10px 0px 0px 0px;
+    }
+  }
+
+  .svg-map__location {
+    fill: #ddd;
+  }
+
+  .svg-map__location:hover {
+    fill: #e4e4e4;
+  }
+
+  @media (max-width: 820px) {
+    & {
+      height: auto;
+    }
+  }
+}

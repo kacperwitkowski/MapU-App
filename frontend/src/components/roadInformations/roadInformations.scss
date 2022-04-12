@@ -1,0 +1,284 @@
+@import "../mixins.scss";
+
+.roadInfo {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+
+  &__close {
+    @include closePage;
+    top: -5px;
+    right: 10px;
+    font-size: 60px;
+  }
+
+  &__content {
+    @include flex;
+    background-color: ivory;
+    border: 1px solid black;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-around;
+    overflow: auto;
+    z-index: 2;
+
+    &--single {
+      width: 40%;
+      height: 70%;
+    }
+
+    & img {
+      width: 200px;
+      height: 115px;
+    }
+
+    &--attr {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__form {
+    @include flex;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: ivory;
+    border: 1px solid black;
+    padding: 20px;
+    flex-direction: column;
+    width: 30%;
+    height: 65%;
+    overflow: auto;
+    z-index: 2;
+
+    &--details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & input {
+        padding: 5px;
+        margin: 5px;
+        width: 60%;
+      }
+    }
+  }
+
+  &__imgDiv {
+    @include flex;
+    align-items: flex-end;
+    flex-direction: row;
+    position: relative;
+    width: 140px;
+    height: 80px;
+
+    &--img {
+      position: absolute;
+      width: 200px;
+      height: 115px;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+
+    &--img:first-child {
+      clip-path: polygon(0 100%, 0 0, 100% 100%);
+    }
+  }
+
+
+  & p,
+  & a {
+    margin: 8px;
+    font-size: 20px;
+    color: black;
+  }
+
+  &--hide {
+    z-index: -1;
+    position: absolute;
+    top: 23%;
+    margin-left: 10px;
+    background: white;
+    color: steelblue;
+    border-radius: 10px;
+    padding: 3px 5px;
+    border-color: steelblue;
+  }
+}
+
+.road {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    top: 18%;
+    z-index: -1;
+    margin-left: 10px;
+    position: absolute;
+    border: 1px solid white;
+    width: 300px;
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+
+    &--select {
+      left: 0;
+      position: absolute;
+      top: 0;
+      text-transform: uppercase;
+      border-radius: 10px;
+      margin: 5px;
+      cursor: pointer;
+      padding: 2px;
+      width: 50px;
+    }
+
+    &--closePopup {
+      @include closePage;
+      top: -5px;
+      right: 10px;
+      color: white;
+      padding: 0px;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    &--buttons {
+      margin: 10px 0px;
+      width: 100%;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      background: none;
+    }
+
+    &--button {
+      min-height: 2rem;
+    }
+  }
+}
+
+.roadInfo__form--button,
+.road__content--button {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 30px;
+  margin: 10px;
+  padding: 0px 10px;
+  transition: all 250ms;
+}
+
+.roadInfo__form--button:hover,
+.roadInfo__form--button:focus,
+.road__content--button:hover,
+.road__content--button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+  .roadInfo__imgDiv--img {
+    height: 80px;
+    width: 100%;
+  }
+
+  .roadInfo__content img {
+    height: 80px;
+    width: 140px;
+  }
+
+  .roadInfo__content {
+    width: 90%;
+  }
+
+  .roadInfo__content--single {
+    width: 60%;
+  }
+
+  .roadInfo__form {
+    width: 50%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 955px) {
+  .road {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 5;
+
+
+    &__content {
+      top: 50%;
+      left: 50%;
+      margin-left: 0px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .roadInfo {
+    .roadInfo__content {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      flex-direction: column;
+      border-radius: 0px;
+      justify-content: unset;
+
+      &--div {
+        padding: 30px 0px;
+      }
+
+      &--details h3 {
+        margin: 0px;
+      }
+    }
+
+    .roadInfo--hide {
+      top: 50%;
+    }
+
+    .roadInfo__form {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      border-radius: 0px;
+    }
+  }
+}
+
+@media (max-width: 955px) and (orientation: landscape) {
+  .roadInfo__form {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

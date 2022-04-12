@@ -1,0 +1,287 @@
+@import "../mixins.scss";
+
+.profile {
+  background-color: lightskyblue;
+  z-index: 6000;
+  min-height: 100vh;
+  margin: 0px;
+  position: relative;
+  color: gold;
+  width: 100%;
+  overflow: hidden;
+
+  &__stats {
+    text-transform: uppercase;
+    text-align: center;
+
+    & button {
+      background-color: transparent;
+      border: 1px solid gold;
+      color: gold;
+      padding: 5px;
+      border-radius: 10px;
+      transition: all .3s;
+      font-weight: 600;
+      margin: 10px;
+    }
+
+    & button:hover {
+      background-color: rgb(235, 235, 235);
+      color: black;
+    }
+  }
+
+  &__statsDiv {
+    @include flex;
+
+    &--medal {
+      @include flex;
+      width: 70px;
+      height: 70px;
+      margin-right: 20px;
+      background-color: transparent;
+      border: 1px solid gold;
+      padding: 5px;
+      border-radius: 10px;
+      transition: all .3s;
+
+      & img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &--img:hover {
+      transform: scale(1.1);
+      transition: all .5s;
+    }
+  }
+
+  &__userImageDiv {
+    @include flex;
+    flex-direction: column;
+
+    &--img {
+      border-radius: 50%;
+      object-fit: cover;
+      height: 150px;
+      width: 150px;
+      background-color: #fff;
+    }
+  }
+
+  &__userPage {
+    @include flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    background-image: url("http://www.script-tutorials.com/demos/360/images/stars.png");
+  }
+
+  &__close {
+    @include closePage;
+    right: 5px;
+    font-size: 30px;
+    color: white;
+  }
+
+  &__settings,
+  &__logout {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gold;
+    width: 110px;
+    height: 110px;
+    border: none;
+
+    & svg {
+      position: absolute;
+      color: black;
+      font-size: 30px;
+      top: unset;
+      left: unset;
+      bottom: 15px;
+      right: 20px;
+    }
+  }
+
+  &__logout {
+    top: 19px;
+    left: 15px;
+    transform: translate(-50%, -50%) rotate(-34deg);
+    background-color: darkred;
+    color: white;
+    z-index: 0;
+
+    & span {
+      position: absolute;
+      top: 86px;
+      left: 31px;
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  &__countries {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2000;
+    min-width: 100vw;
+    min-height: 100%;
+    overflow: hidden;
+
+    &--content {
+      color: rgb(88, 87, 87);
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      & ul li {
+        padding: 20px 20px 20px 0px;
+      }
+    }
+
+    &--close {
+      @include closePage;
+      top: -10px;
+      right: 10px;
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__userPage {
+      flex-direction: column;
+    }
+  }
+}
+
+/* VIDEO */
+
+.video {
+  width: 100%;
+  max-width: 500px;
+  max-height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+
+  &__content {
+    width: 100%;
+  }
+
+  &:hover &__controls {
+    transform: translateY(0%);
+  }
+
+  &__controls {
+    @include flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0px;
+    padding: 14px;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(150%);
+    transition: all 0.3s ease-in-out;
+
+    &--playToggle button {
+      background: none;
+      border: none;
+
+      &--playToggle i {
+        background: none;
+        color: white;
+        font-size: 30px;
+      }
+    }
+
+    &--velocity {
+      appearance: none;
+      background: none;
+      color: white;
+      outline: none;
+      border: none;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+
+      & option {
+        color: black;
+      }
+    }
+
+    &--muteBtn {
+      background: none;
+      border: none;
+      height: 18px;
+      color: white;
+      font-size: 18px;
+    }
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    background: gray;
+    border-radius: 25px;
+    border: 0px solid #000101;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none !important;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: 4px;
+    width: 80%;
+  }
+
+  input[type="range"]::-moz-range-progress {
+    background: white;
+  }
+}
+
+@media (max-width: 500px) {
+  input[type="range"] {
+    width: 60%;
+  }
+}

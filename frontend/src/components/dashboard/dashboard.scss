@@ -1,0 +1,127 @@
+@import "../mixins.scss";
+
+.dashboard {
+  background-image: url("./dashboardBG.jpg");
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__close {
+    @include closePage;
+    right: 0px;
+    font-size: 30px;
+  }
+
+  &__options {
+    display: grid;
+    align-self: center;
+
+    & button {
+      grid-row: 1/-1;
+    }
+
+    & select {
+      grid-row: 1/-1;
+      cursor: pointer;
+      padding: 8px 10px 8px 10px;
+      background-color: #e6e6e6;
+    }
+  }
+
+
+  &__roadsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  &__road {
+    margin: 10px 10px 0px 10px;
+    position: relative;
+    text-align: center;
+    max-width: 290px;
+    box-shadow: 2px 8px 20px #d6d0d0;
+    background-color: white;
+
+    &--title {
+      @include flex;
+
+      & p {
+        margin-right: 5px;
+      }
+    }
+
+    &--editTitleForm {
+      display: none;
+    }
+
+    &--imgDiv {
+      height: 155px;
+    }
+
+    &--img {
+      position: absolute;
+      width: 290px;
+      height: 155px;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+      display: block;
+
+      &:first-child {
+        clip-path: polygon(0 100%, 0 0, 100% 100%);
+      }
+    }
+
+    &--delete {
+      color: firebrick;
+      background: none;
+      border: none;
+      position: relative;
+      left: -45px;
+      font-size: 20px;
+      margin-top: 7px;
+      padding: 0px;
+    }
+
+    &--details {
+      @include flex;
+      flex-direction: row-reverse;
+      margin: 10px;
+      border-top: 1px solid black;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__options {
+
+      & button {
+        position: fixed;
+        padding: 6px 8px;
+        font-size: 12px;
+
+        &:first-child {
+          left: 0;
+          top: 50%;
+        }
+
+        &:last-child {
+          right: 0;
+          top: 50%;
+        }
+      }
+
+      & select {
+        padding: 8px 0px 8px 0px;
+        font-size: 12px;
+      }
+    }
+
+    &_close {
+      right: 0;
+      font-size: 22px;
+    }
+  }
+}

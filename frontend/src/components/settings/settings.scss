@@ -1,0 +1,155 @@
+@import "../mixins.scss";
+
+.settings {
+ background-color: rgba(0, 0, 0, 0.4);
+ position: absolute;
+ top: 0%;
+ left: 0%;
+ z-index: 2000;
+ min-width: 100vw;
+ min-height: 100vh;
+ overflow: hidden;
+
+ & img {
+  width: 200px;
+ }
+
+ &__close {
+  @include closePage;
+  top: -10px;
+  right: 10px;
+  font-size: 60px;
+ }
+
+ &__content {
+  color: black;
+  width: 45%;
+  height: 60%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--buttons {
+   width: 40%;
+  }
+
+  .settings__content--divs {
+   display: flex;
+   width: 100%;
+
+   & form input {
+    width: 70%;
+    margin: 10px 0px;
+    padding: 10px;
+   }
+
+   & form button {
+    background-color: rgb(161, 217, 155);
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+   }
+  }
+
+  &--form2 {
+   display: none;
+  }
+
+  &--form1,
+  &--form2 {
+   width: 60%;
+   flex-direction: column;
+   @include flex();
+  }
+
+  &--button {
+   width: 180px;
+   height: 60px;
+   margin: 10px 0px;
+   background-color: skyblue;
+   border-radius: 10px;
+   font-size: 20px;
+   transition: all .3s;
+
+   &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 26px 12px rgb(190, 194, 190);
+   }
+
+   &:last-child {
+    color: white;
+    background-color: darkred;
+   }
+
+  }
+ }
+
+ .settings__footer {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &--text {
+   text-align: center;
+  }
+ }
+
+ @media (max-width: 950px) {
+  &__content--divs {
+   flex-direction: column;
+
+   & form {
+    width: 100%;
+    margin-top: 30px;
+   }
+  }
+
+  &__content {
+   width: 100%;
+   height: 100%;
+   padding: 0px;
+   border-radius: 0px;
+   overflow: scroll;
+
+   &--buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+  }
+ }
+
+ @media (max-width: 450px) {
+  &__content {
+   width: 100%;
+   padding: 0px;
+   height: 100%;
+   border-radius: 0px;
+
+   &--button {
+    width: 100px;
+    font-size: 16px;
+   }
+  }
+ }
+
+ @media (max-width: 340px) {
+  & img {
+   width: 120px;
+  }
+ }
+}
