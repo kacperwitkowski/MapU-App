@@ -74,6 +74,10 @@
       border-radius: 15px;
       color: white;
       background-color: steelblue;
+
+      &:disabled {
+        background-color: gray;
+      }
     }
   }
 
@@ -90,13 +94,11 @@
     }
   }
 
-  &__emailSendBtn:hover,
-  &__formSumbit--button:hover {
+  &__emailSendBtn:hover {
     transform: translateY(-3px);
-    transition: all .4s;
+    transition: all 0.4s;
     background: #a1d99b;
   }
-
 
   @media (max-width: 950px) {
     &__content {

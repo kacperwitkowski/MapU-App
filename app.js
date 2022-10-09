@@ -27,7 +27,6 @@ app.use(require("./routes/auth"));
 app.use(require("./routes/roadRoute"));
 app.use(require("./routes/countriesRoute"));
 
-
 app.use((err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
   err.status = err.status || "error";
@@ -38,9 +37,9 @@ app.use((err, req, res, next) => {
   });
 });
 
-  app.use(express.static("frontend/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-  });
+app.use(express.static("frontend/build"));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+});
 
 app.listen(PORT);

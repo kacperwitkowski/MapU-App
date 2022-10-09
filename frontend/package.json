@@ -9,9 +9,9 @@
     "@material-ui/icons": "^4.11.2",
     "@reduxjs/toolkit": "^1.7.1",
     "@svg-maps/world": "^1.0.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "country-list": "^2.2.0",
     "mapbox-gl": "^2.6.1",
@@ -49,5 +49,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }

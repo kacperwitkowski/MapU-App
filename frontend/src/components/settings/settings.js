@@ -118,7 +118,7 @@ const Settings = ({ setIsActive }) => {
         >
           &times;
         </button>
-        <img src="./logo.png" />
+        <img src="./logo.png" alt="mapu logo"/>
         <div className="settings__content--divs">
           <div className="settings__content--buttons">
             <button
@@ -188,7 +188,7 @@ const Settings = ({ setIsActive }) => {
         <div className="settings__footer">
           <p className="settings__footer--text">
             &#64;All Rights Reserved by
-            <a href="https://github.com/kacperwitkowski" target="_blank">
+            <a href="https://github.com/kacperwitkowski" target="_blank" rel="noreferrer">
               {" "}
               Kacper Witkowski
             </a>

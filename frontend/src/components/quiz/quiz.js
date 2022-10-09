@@ -117,22 +117,22 @@ const Quiz = ({ setIsActive }) => {
           <p>Good Luck!</p>
           <div className="quiz__content--medals">
             <div>
-              <img src="./sandybrown.png" />
+              <img src="./sandybrown.png" alt="brown medal" />
               <p>Bronze medal: 1-30%</p>
             </div>
             <div>
-              <img src="./silver.png" />
+              <img src="./silver.png" alt="silver medal" />
               <p>Silver medal: 31-80%</p>
             </div>
             <div>
-              <img src="./gold.png" />
+              <img src="./gold.png" alt="gold medal" />
               <p>Gold medal: 81-100%</p>
             </div>
           </div>
           <p>
             PS. If you're interested in playing in Movie Quiz with crazy
             helpers,sounds and even more features, check out my{" "}
-            <a target="_blank" href="https://movie-quiz-app.herokuapp.com/">
+            <a target="_blank" href="https://movie-quiz-app.herokuapp.com/" rel="noreferrer">
               Movie Quiz!
             </a>
           </p>

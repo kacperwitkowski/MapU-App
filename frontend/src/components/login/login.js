@@ -33,10 +33,10 @@ const Login = ({ setShowLogin, setCurrentUser }) => {
     };
 
     try {
-      const res = await axios.post("/signin", user);
-      localStorage.setItem("jwt", res.data.token);
-      localStorage.setItem("user", JSON.stringify(res.data.user));
-      setCurrentUser(res.data.user.username);
+      const { data } = await axios.post("/signin", user);
+      localStorage.setItem("jwt", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
+      setCurrentUser(data.user.username);
       setShowLogin(false);
     } catch (err) {
       setFailure(true);
@@ -54,7 +54,7 @@ const Login = ({ setShowLogin, setCurrentUser }) => {
           &times;
         </button>
         <div className="login__logo">
-          <img src="./logo.png" alt="logo"/>
+          <img src="./logo.png" alt="logo" />
         </div>
         <form className="login__formSumbit" onSubmit={(e) => handleSumbit(e)}>
           <input
@@ -71,7 +71,13 @@ const Login = ({ setShowLogin, setCurrentUser }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="login__formSumbit--button">Login</button>
+          <button
+            disabled={!password || !email}
+            className="login__formSumbit--button"
+            data-testid="loginButton"
+          >
+            Login
+          </button>
         </form>
         {failure && (
           <span style={{ color: "red", textAlign: "center" }}>

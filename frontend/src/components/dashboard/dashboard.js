@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 import Scroll from "../scroll/scroll";
 
-const Dashboard = ({ isActive, setIsActive }) => {
+const Dashboard = ({ setIsActive }) => {
   const [roads, setRoads] = useState([]);
   const [sortType, setSortType] = useState("");
   const [sortCurr, setSortCurr] = useState("");

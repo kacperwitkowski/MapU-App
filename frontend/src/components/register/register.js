@@ -134,12 +134,20 @@ const Register = ({ setShowRegister }) => {
             <input type="file" onChange={(e) => setImage(e.target.files[0])} />
           </label>
 
+
+
           <button
             onClick={(e) => postData(e)}
             className="register__content--button"
           >
             Register
           </button>
+
+
+
+
+
+
         </form>
         {failure === 500 ? (
           <span style={{ color: "red", textAlign: "center" }}>
