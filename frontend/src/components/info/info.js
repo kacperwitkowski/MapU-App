@@ -25,12 +25,12 @@ const Info = ({ setIsActive }) => {
           use all of the feautres MapU provides, you have to be logged in!
         </p>
         <div className="info__content--imgDiv">
-          <img src={driveGif} />
+          <img src={driveGif} alt="meme"/>
         </div>
         <div>
           <p>
             &#64;All Rights Reserved by
-            <a href="https://github.com/kacperwitkowski" target="_blank">
+            <a href="https://github.com/kacperwitkowski" target="_blank" rel="noreferrer">
               {" "}
               Kacper Witkowski
             </a>

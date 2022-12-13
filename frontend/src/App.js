@@ -52,7 +52,7 @@ const MapboxGLMap = () => {
   useEffect(() => {
     const initializeMap = async ({ setMap, mapContainer }) => {
       const getGasolineData = await axios.get(
-        "https://faithful-tick-top-coat.cyclic.app/countries"
+        "https://countries-info-api.cyclic.app/countries"
       );
 
       const map = new mapboxgl.Map({
@@ -60,7 +60,7 @@ const MapboxGLMap = () => {
         style: "mapbox://styles/mapbox/streets-v11?optimize=true",
         center: [-0.118092, 51.509865],
         zoom: 11,
-        noWrap: true
+        noWrap: true,
       });
 
       const directions = new MapboxDirections({
@@ -76,13 +76,13 @@ const MapboxGLMap = () => {
           dispatch(setOriginCor([longitude, latitude]));
 
           const cordsIso3 = iso1A3Code([longitude, latitude]);
+
           const items2 = getGasolineData.data.filter(
             (item) => item.isoAlpha3 === cordsIso3
           );
-          const respond = Object.assign(...items2);
 
-          dispatch(setItems1(respond));
-          dispatch(setGasolineO(respond.gasolinePrice));
+          dispatch(setItems1(items2[0]));
+          dispatch(setGasolineO(items2[0].gasolinePrice));
         } catch (err) {
           throw err;
         }
@@ -98,9 +98,10 @@ const MapboxGLMap = () => {
             (item) => item.isoAlpha3 === cordsIso3
           );
 
-          const respond = Object.assign(...items2);
-          dispatch(setItems2(respond));
-          dispatch(setGasolineD(respond.gasolinePrice));
+          // const respond = Object.assign(...items2);
+
+          dispatch(setItems2(items2[0]));
+          dispatch(setGasolineD(items2[0].gasolinePrice));
         } catch (err) {
           throw err;
         }

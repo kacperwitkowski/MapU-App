@@ -201,7 +201,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   // 3) Send back to user's email
 
   const message = `<h2>Hello,</h2>
-  <p>We've received a request to reset the password for your MapU account associated with ${email}. No changes have been made to your account yet. You can reset your password by clicking <a href="https://mapu-app.herokuapp.com/resetpassword/${resetToken}">this link</a>. If you haven't forget your password please ignore this email!</p><footer>--The MapU team</footer>`;
+  <p>We've received a request to reset the password for your MapU account associated with ${email}. No changes have been made to your account yet. You can reset your password by clicking <a href="https://black-crocodile-veil.cyclic.app/${resetToken}">this link</a>. If you haven't forget your password please ignore this email!</p><footer>--The MapU team</footer>`;
 
   try {
     await sendEmail({

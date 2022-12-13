@@ -132,7 +132,7 @@ const Quiz = ({ setIsActive }) => {
           <p>
             PS. If you're interested in playing in Movie Quiz with crazy
             helpers,sounds and even more features, check out my{" "}
-            <a target="_blank" href="https://movie-quiz-app.herokuapp.com/" rel="noreferrer">
+            <a target="_blank" href="https://movie-quiz-app.cyclic.app/" rel="noreferrer">
               Movie Quiz!
             </a>
           </p>
