@@ -129,7 +129,7 @@ const Profile = ({ setIsActive }) => {
         <div className="video">
           <video
             className="video__content"
-            src="./starwarstheme.mp4"
+            src="https://res.cloudinary.com/dx7vsnkjj/video/upload/v1670966876/starwarstheme_qjxwlk.mp4"
             ref={videoEl}
             onTimeUpdate={handleOnTimeUpdate}
           />
