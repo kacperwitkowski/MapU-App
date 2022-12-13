@@ -52,7 +52,7 @@ const MapboxGLMap = () => {
   useEffect(() => {
     const initializeMap = async ({ setMap, mapContainer }) => {
       const getGasolineData = await axios.get(
-        "https://my-countries-api.herokuapp.com/countries"
+        "https://faithful-tick-top-coat.cyclic.app/countries"
       );
 
       const map = new mapboxgl.Map({

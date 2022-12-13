@@ -3,7 +3,7 @@
 App builded with Next.js and React.
 
 - Authentication
-- Fetching data from my own made API (available here: **https://my-countries-api.herokuapp.com/countries**)
+- Fetching data from my own made API (available here: **https://faithful-tick-top-coat.cyclic.app/countries**)
 - Redux Toolkit to pass data within components
 - SASS/SCSS
 - Unity/intergration testing
